@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Selectors Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        *{
+            font-family: Helvetica;
+            text-align: center;  
+        }
+        
+        .pictures{
+            display: flex;
+        }
+        
+        .pictures .responsive{
+            width: 345px;
+        }
+        
+        .pictures .responsive img{
+            width: 350px;
+        }
+        
+        .pictures .responsive{
+            margin: 0 5px;
+        }
+        
+        .pictures .responsive:hover{
+            outline: 2px solid gray;
+        }
+        
+        .pictures .responsive img:hover{
+            width: 345px;
+        }
+        
+        .desc{
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Capture The Moment</h1>
+
+<h4>#ItsMoreFunInThePhilippines</h4>
+
+
+<section class="pictures">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="palawan.jpg">
+      <img src="palawan.jpg" alt="Cinque Terre">
+    </a>
+    <div class="desc">El Nido, Palawan</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="siargao.jpg">
+      <img src="siargao.jpg" alt="Forest">
+    </a>
+    <div class="desc">Surfing Capital, Siargao</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bohol.jpg">
+      <img src="bohol.jpg" alt="Northern Lights">
+    </a>
+    <div class="desc">Chocolate Hills, Bohol</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="boracay.jpg">
+      <img src="boracay.jpg" alt="Mountains">
+    </a>
+    <div class="desc">White Beach, Boracay</div>
+  </div>
+</div>
+</section>
+    
+<div class="clearfix"></div>
+
+
+
+</body>
+</html>
